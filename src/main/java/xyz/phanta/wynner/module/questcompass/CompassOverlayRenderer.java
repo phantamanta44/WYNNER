@@ -46,7 +46,7 @@ public class CompassOverlayRenderer implements HudRenderer {
                     : String.format("%.1f km", dist / 1000D);
             mc.fontRenderer.drawStringWithShadow(text,
                     halfWidth + drawRadius * (float)Math.cos(angGeo) - mc.fontRenderer.getStringWidth(text) / 2F,
-                    halfHeight + drawRadius * (float)Math.sin(angGeo) - mc.fontRenderer.FONT_HEIGHT / 2F, 0x48FF48);
+                    halfHeight + drawRadius * (float)Math.sin(angGeo) - mc.fontRenderer.FONT_HEIGHT / 2F, 0xFFAA00);
         }
         return true;
     }
