@@ -29,20 +29,18 @@ public enum ItemTier {
 
     @Nullable
     public static ItemTier parseLoreLine(String loreLine) {
-        switch (loreLine) {
-            case "\u00a7fNormal Item":
-                return NORMAL;
-            case "\u00a7eUnique Item":
-                return UNIQUE;
-            case "\u00a7dRare Item":
-                return RARE;
-            case "\u00a7bLegendary Item":
-                return LEGENDARY;
-            case "\u00a75Mythic Item":
-                return MYTHIC;
-        }
-        if (loreLine.startsWith("\u00a7aSet Item")) {
+        if (loreLine.startsWith("\u00a7fNormal Item")) {
+            return NORMAL;
+        } else if (loreLine.startsWith("\u00a7eUnique Item")) {
+            return UNIQUE;
+        } else if (loreLine.startsWith("\u00a7dRare Item")) {
+            return RARE;
+        } else if (loreLine.startsWith("\u00a7aSet Item")) {
             return SET;
+        } else if (loreLine.startsWith("\u00a7bLegendary Item")) {
+            return LEGENDARY;
+        } else if (loreLine.startsWith("\u00a75Mythic Item")) {
+            return MYTHIC;
         }
         return null;
     }
