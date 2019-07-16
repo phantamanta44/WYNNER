@@ -1,0 +1,27 @@
+{
+  "wynner.special_fx.slash": {
+    "sounds": [
+      "wynner:special_fx/slash"
+    ]
+  },
+  "wynner.special_fx.thump": {
+    "sounds": [
+      "wynner:special_fx/thump"
+    ]
+  },
+  "wynner.special_fx.myriad": {
+    "sounds": [
+      "wynner:special_fx/myriad"
+    ]
+  },
+  "wynner.special_fx.tempest": {
+    "sounds": [
+      "wynner:special_fx/tempest"
+    ]
+  },
+  "wynner.status_overlay.stealth_loop": {
+    "sounds": [
+      "wynner:status_overlay/stealth_loop"
+    ]
+  }
+}
